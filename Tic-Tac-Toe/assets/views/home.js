@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Box from '../components/box';
+import Row from '../components/row';
 
 
 export default class Home extends Component {
@@ -17,7 +18,7 @@ export default class Home extends Component {
       <View style={styles.container_Home}>
         
     <Text>Jugemos!!!</Text>
-   <Box/>
+   <Row/>
       </View>
     );
   }

@@ -19,7 +19,7 @@ export default class Box extends Component {
       style={[styles.option]}
       disabled={this.props.buttonValue !== null || this.props.gameOver}>
           <Text style={[styles.optionText]}>
-          {this.props.buttonValue ? this.props.buttonValue : ' '}
+          {this.props.buttonValue ? this.props.buttonValue : '?'}
         </Text>
       </TouchableOpacity>
      
