@@ -42,7 +42,8 @@ export default class Box extends Component {
           justifyContent: 'center',
           alignItems: 'center',
           borderWidth: 1,
-          borderColor: 'black'
+          borderColor: 'black',
+          width: 100
         },
       
         optionText: {
