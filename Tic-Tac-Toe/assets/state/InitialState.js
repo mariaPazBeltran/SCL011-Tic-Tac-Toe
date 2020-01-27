@@ -1,4 +1,4 @@
-const InitialState = () => ({
+const InitialState = {
   boardId: null,
   winner: null,
   nextPlayer: 'X',
@@ -10,5 +10,5 @@ const InitialState = () => ({
   ],
   newBoard: null,
   loading: false
-});
+};
 export default InitialState;
