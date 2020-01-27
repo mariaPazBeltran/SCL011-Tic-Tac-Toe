@@ -20,7 +20,7 @@ export default class Home extends Component {
     <Text>Jugemos!!!</Text>
    
    <LinearGradient
-            colors={["#000", '#f0f']}
+            colors={["#f0f", '#fff']}
             style={styles.gameContainerGradient} >
             <Board/>
           </LinearGradient>
