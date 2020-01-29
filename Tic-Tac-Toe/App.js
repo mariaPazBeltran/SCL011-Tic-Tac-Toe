@@ -1,21 +1,19 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import ProviderContext from './assets/state/ProviderContext'
 import Home from './assets/views/home';
-import MyContext from './assets/state/MyContext';
+
 
 
 
 export default function App() {
-  
-  const { ...state } = useContext(MyContext);;
+ 
   return (
    <ProviderContext>
-     <View style={styles.container}>
-  <Text>{state.nextPlayer}</Text>
-     <Home/>
-   </View>
-   {console.log(state.nextPlayer)}
+ <View style={styles.container}>
+   <Text>mwen kontan pou konnen w</Text>
+ <Home/>
+ </View>
    </ProviderContext>
   );
 }

@@ -4,10 +4,15 @@ import React, { useReducer } from "react";
 
 function reducer(state, action) {
     switch (action.type) {
-      case 'increment':
-        return {count: state.count + 1};
-      case 'decrement':
-        return {count: state.count - 1};
+      case 'movement':
+       return {
+         ...state,
+         nextPlayer: 'O'
+        
+        }
+
+      case 'reset':
+        return InitialState
       default:
         throw new Error();
     }

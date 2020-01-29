@@ -9,7 +9,6 @@ export default class Row extends Component {
             rowNum={this.props.rowNum}
             colNum={val}
             gameOver={this.props.gameOver}
-           
             onClick={this.props.onClick}
             key={val}
           />
@@ -22,6 +21,7 @@ export default class Row extends Component {
         return (
           <View style={styles.container}>
             { row }
+            {console.log(...row)}
           </View>
         );
       }
