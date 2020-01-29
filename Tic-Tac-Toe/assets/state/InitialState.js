@@ -9,6 +9,5 @@ const InitialState = {
     [null, null, null]
   ],
   newBoard: null,
-  loading: false
 };
 export default InitialState;

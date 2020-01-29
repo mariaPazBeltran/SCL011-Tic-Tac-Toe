@@ -5,9 +5,11 @@ import React, { useReducer } from "react";
 function reducer(state, action) {
     switch (action.type) {
       case 'movement':
+        const player = state.nextPlayer === 'X' ? 'O' : 'X';
+
        return {
          ...state,
-         nextPlayer: 'O'
+         nextPlayer: player
         
         }
 
