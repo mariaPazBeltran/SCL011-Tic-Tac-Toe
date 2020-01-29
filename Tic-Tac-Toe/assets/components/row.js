@@ -9,6 +9,7 @@ export default class Row extends Component {
             rowNum={this.props.rowNum}
             colNum={val}
             gameOver={this.props.gameOver}
+            buttonValue={this.props.boardRow[val]}
             onClick={this.props.onClick}
             key={val}
           />

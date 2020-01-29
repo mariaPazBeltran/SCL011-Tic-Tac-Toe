@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import Board from '../components/board';
 import { LinearGradient } from 'expo-linear-gradient';
+import MyContext from '../state/MyContext';
 
 const windowWidth = Dimensions.get('window').width;
-export default class Home extends Component {
-  constructor(){
-    super()
-    this.state={
-    
-    }
-  
-  }
-
-  render(){
+ const Home =()=> {
+    const { dispatch, state } = useContext(MyContext);
     return (
       <View style={styles.container_Home}>
         
@@ -22,12 +15,14 @@ export default class Home extends Component {
    <LinearGradient
             colors={["#f0f", '#fff']}
             style={styles.gameContainerGradient} >
-            <Board/>
+            <Board
+            board={state.board}/>
+            {console.log(state.board)}
+            
           </LinearGradient>
       </View>
        
     );
-  }
   }
   const styles = StyleSheet.create({
     container_Home: {
@@ -46,3 +41,4 @@ export default class Home extends Component {
       flex: 1
     },
   });
+  export default Home

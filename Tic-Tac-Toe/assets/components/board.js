@@ -10,7 +10,7 @@ export default class Board extends Component {
       <Row
         onClick={this.props.onClick}
         rowNum={val}
-        
+        boardRow={this.props.board[val]}
         gameOver={this.props.gameOver}
         key={val}
       />
