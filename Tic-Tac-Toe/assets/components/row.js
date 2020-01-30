@@ -22,7 +22,6 @@ export default class Row extends Component {
         return (
           <View style={styles.container}>
             { row }
-            {console.log(...row)}
           </View>
         );
       }

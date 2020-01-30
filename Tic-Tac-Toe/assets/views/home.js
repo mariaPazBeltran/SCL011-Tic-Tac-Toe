@@ -17,6 +17,7 @@ const windowWidth = Dimensions.get('window').width;
             colors={["#f0f", '#fff']}
             style={styles.gameContainerGradient} >
             <Board/>
+            {console.log(state)}
           </LinearGradient>
       </View>
        
