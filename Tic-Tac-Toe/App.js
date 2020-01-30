@@ -1,17 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ProviderContext from './assets/state/ProviderContext'
 import Home from './assets/views/home';
 
 
+
+
 export default function App() {
+ 
   return (
-    <View style={styles.container}>
-      <Text>holis!</Text>
-  <Text>bonjou, m rele mary. mwen kontan pou konnen w</Text>
-  <Home/>
-    </View>
+   <ProviderContext>
+ <View style={styles.container}>
+   <Text>mwen kontan pou konnen w</Text>
+ <Home/>
+ </View>
+   </ProviderContext>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
