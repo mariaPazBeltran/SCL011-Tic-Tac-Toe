@@ -7,6 +7,7 @@ import MyContext from '../state/MyContext';
 const windowWidth = Dimensions.get('window').width;
  const Home =()=> {
     const { dispatch, state } = useContext(MyContext);
+   const player2 = 'O'
     return (
       <View style={styles.container_Home}>
         
@@ -15,10 +16,7 @@ const windowWidth = Dimensions.get('window').width;
    <LinearGradient
             colors={["#f0f", '#fff']}
             style={styles.gameContainerGradient} >
-            <Board
-            board={state.board}/>
-            {console.log(state.board)}
-            
+            <Board/>
           </LinearGradient>
       </View>
        

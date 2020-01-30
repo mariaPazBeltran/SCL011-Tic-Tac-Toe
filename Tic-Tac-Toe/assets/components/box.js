@@ -6,7 +6,7 @@ export default class Box extends Component {
         super()
         this.handleClick = this.handleClick.bind(this)
     }
-    handleClick(evt) {
+    handleClick() {
         this.props.onClick(this.props.rowNum, this.props.colNum);
       }
     render(){
