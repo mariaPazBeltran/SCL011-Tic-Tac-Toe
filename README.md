@@ -2,16 +2,11 @@
 
 
 # Tic tac toe - React Native
-
-  
-
 ## Índice
-
-  
 
 *  [1. Preámbulo](#1-preámbulo)
 
-*  [2. Resumen del proyecto](#2-resumen-del-proyecto)
+*  [2. Usuario Objetivo](#2-usuario-objetivo)
 
 *  [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 
@@ -34,44 +29,15 @@
   
 
 ## 1. Preámbulo
-El **tres en línea**, también conocido como **Ceros y Cruces**, **tres en raya** (España, Ecuador y Bolivia), **Michi** (en Perú), **juego del gato**, **Triqui** (en Colombia), **Cuadritos**, **Gato** (en Chile, Costa Rica _y_ México), **Tatetí** (en Argentina y Paraguay), **Totito** (en Guatemala), **Triqui traka**, **Equis Cero**, **Tic-Tac-Toe** (en Estados Unidos), o **la vieja** (en Venezuela). Originalmente es un juego de lápiz y papel entre dos jugadores: O y X, que marcan los espacios de un tablero de 3×3 alternadamente. En esta ocación vamos a construir este juego para tablets y celular
+El **tres en línea**, también conocido como, **Gato** (en Chile, Costa Rica _y_ México), **Tic-Tac-Toe** (en Estados Unidos), o **la vieja** (en Venezuela). Originalmente es un juego de lápiz y papel entre dos jugadores: O y X, que marcan los espacios de un tablero de 3×3 alternadamente. En esta ocación vamos a construir este juego para tablets y celular
 
-Para construir el juego vamos a usar [React Native](https://facebook.github.io/react-native/), que nos permite construir aplicaciones _nativas_ (que no _híbridas_) que se puedan instalar y ejecutar en dispositivos Android e iOS, y todo ello usando JavaScript y React para componer nuestra interfaz.
+Para construir el juego vamos a usar [React Native](https://facebook.github.io/react-native/), que nos permite construir aplicaciones _nativas_ (que no _híbridas_) que se puedan instalar y ejecutar en dispositivos Android e iOS, y todo ello usando JavaScript y React para componer nuestra interfaz. Además se trabajará con **Context Api** y los hooks **useReducer** y **useContext**
 
-#### Usuario Objetivo:
-  Nuestro público objetivo en este caso son niños en edad pre-escolar, así que el juego debe ser simple, intuitivo, con botones grandes, poco o nada de texto, ...
-
-  
-
-## 2. Resumen del proyecto
-
-  React Native es una herramienta que nos permite construir aplicaciones nativas para Android e iOS usando JavaScript y React. que se pueden instalar a través de un
-
-[App Store](https://www.apple.com/lae/ios/app-store/)
-
-o [Google Play](https://play.google.com/).
-
-  
-
-Exisen muchas herramientas y plataformas para construir aplicaciones para
-
-dispositivos móviles, con soluciones que van desde
-
-[PWA](https://developers.google.com/web/progressive-web-apps/), hasta 100%
-
-nativo, pasando por soluciones híbridas (como [Phonegap](https://phonegap.com/)).
-
-A diferencia de las soluciones híbridas, que han sido populares con
-
-desarrolladores web en el pasado, React Native nos permite construir
-
-aplicaciones realmente _nativas_, pero usando JavaScript y React. Esto significa
-
-mejor _performance_ y acceso directo al sistema en vez de estar confinado a una
-
-vista _web_.
-
-  
+## 2. Usuario objetivo:
+  Nuestro público objetivo en este caso
+   son niños en edad pre-escolar, 
+   así que el juego debe ser simple, intuitivo, con botones grandes, 
+   poco o nada de texto, ...
 
 ## 3. Objetivos de aprendizaje
 
@@ -511,9 +477,9 @@ expo publish
 
 * [ ] Muestra jugador al que le toca su turno
 
-* [ ] Permite marcar cajita vacía
+* [x] Permite marcar cajita vacía
 
-* [ ] Cambia el turno después de marcar cajita
+* [x] Cambia el turno después de marcar cajita
 
 * [ ] No permite marcar cajita ya marcada
 
