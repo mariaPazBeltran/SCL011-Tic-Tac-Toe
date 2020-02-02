@@ -3,15 +3,15 @@ import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import Board from '../components/board';
 import { LinearGradient } from 'expo-linear-gradient';
 import MyContext from '../state/MyContext';
+import NextPlayer from '../components/nextPlayer';
 
 const windowWidth = Dimensions.get('window').width;
  const Home =()=> {
-    const { dispatch, state } = useContext(MyContext);
-   const player2 = 'O'
+    const { state } = useContext(MyContext);
     return (
       <View style={styles.container_Home}>
         
-    <Text>Jugemos!!!</Text>
+    <NextPlayer/>
    
    <LinearGradient
             colors={["#f0f", '#fff']}

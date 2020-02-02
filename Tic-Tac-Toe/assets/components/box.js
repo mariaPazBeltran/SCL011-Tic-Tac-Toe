@@ -12,7 +12,7 @@ export default class Box extends Component {
     render(){
      
       return (
-        <View style={styles.container_Home}>
+        <View>
           
       <TouchableOpacity
       onPress={this.handleClick}
