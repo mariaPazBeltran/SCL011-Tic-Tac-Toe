@@ -29,15 +29,16 @@ function reducer(state, action) {
           });
           return isFull;
         };
-        const winningCombination = (combinationValues) => {
+        const isWinningCombination = (combinationValues) => {
           /*
           Retorna 'true' si son las siguientes combinaciones
           ["X", "X", "X"], ["O", "O", "O"], de lo contrario,
           retorna 'false'.
           */
-          const xWins = !combinationValues.filter(()=>'X').length;
-          const oWins = !combinationValues.filter(()=>'O').length;
-          return xWins || oWins;
+          const xWins = combinationValues.filter((value)=>value === 'X').length ===3;
+          const oWins = combinationValues.filter((value)=>value === 'O').length ===3;
+         
+          return xWins || oWins ;
         };
         const checkWinningCombination = (board) => {
           const combinations = [
@@ -63,7 +64,7 @@ function reducer(state, action) {
               const col = position[1];
               combinationValues.push(board[row][col]);
             });
-            if (winningCombination(combinationValues)) {
+            if (isWinningCombination(combinationValues)) {
               foundWinningCombination = true;
             }
           });
