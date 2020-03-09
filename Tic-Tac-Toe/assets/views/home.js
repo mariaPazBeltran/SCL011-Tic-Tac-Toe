@@ -10,36 +10,38 @@ const windowWidth = Dimensions.get('window').width;
  const Home =()=> {
     const { state } = useContext(MyContext);
     return (
-      <View style={styles.container_Home}>
+      <LinearGradient colors={['#fedc63','#672364', "#430064"]}
+      style={styles.container_Home} >
+      <View style={styles.gameContainerGradient}>
         
     <NextPlayer/>
-   
-   <LinearGradient
-            colors={["#f0f", '#fff']}
-            style={styles.gameContainerGradient} >
+           
             <Board/>
             {console.log(state)}
-          </LinearGradient>
+          
           {state.gameOver && <WinnerPlayer/>}
       </View>
-       
+       </LinearGradient>
     );
   }
   const styles = StyleSheet.create({
     container_Home: {
      
-      backgroundColor: '#f0f',
+     
       height: windowWidth,
       borderWidth: 1,
       borderRadius: 5,
-      borderColor: "black",
+      borderColor: "#fedc63",
       marginTop: 0,
       margin: 10,
       alignItems: 'center',
       justifyContent: 'center',
+      
     },
     gameContainerGradient: {
-      flex: 1
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
     },
   });
   export default Home

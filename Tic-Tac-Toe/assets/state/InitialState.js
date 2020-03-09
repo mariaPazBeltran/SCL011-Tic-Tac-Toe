@@ -1,6 +1,8 @@
+import swords from '../img/swords.png'
+import shield from '../img/shield.png'
 const InitialState = {
   winner: null,
-  nextPlayer: 'X',
+  nextPlayer: swords,
   gameOver: false,
   board: [
     [null, null, null],
