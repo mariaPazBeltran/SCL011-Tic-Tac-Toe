@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Tic-Tac-Toe",
+    "name": "Medieval Tic-Tac-Toe",
     "slug": "Tic-Tac-Toe",
     "privacy": "public",
     "sdkVersion": "36.0.0",
@@ -11,7 +11,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon2.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "El tres en línea, también conocido como, Gato (en Chile, Costa Rica y México), Tic-Tac-Toe (en Estados Unidos), o la vieja (en Venezuela). Originalmente es un juego de lápiz y papel entre dos jugadores: 'O' y 'X', pero esta vez son: ¡Escudos y Espadas!",
+    "githubUrl": "https://github.com/mariaPazBeltran/SCL011-Tic-Tac-Toe"
   }
 }

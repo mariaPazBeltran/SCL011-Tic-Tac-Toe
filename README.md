@@ -30,6 +30,8 @@ En este caso he decidido cambiar los token 'X' y 'O' por espadas y escudos. Con 
 ####  Producto Final
 ![Producto Final](https://i.ibb.co/t3QKGgv/Screenshot-20200309-020322.jpg))
 
+Descarga [aquí](https://expo.io/@mary_peace/Tic-Tac-Toe)
+
 ## 4. Checklist
 
 
