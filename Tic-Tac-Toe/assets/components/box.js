@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 export default class Box extends Component {
     constructor(){
         super()
@@ -18,9 +18,8 @@ export default class Box extends Component {
       onPress={this.handleClick}
       style={[styles.option]}
       disabled={this.props.buttonValue !== null || this.props.gameOver}>
-          <Text style={[styles.optionText]}>
-          {this.props.buttonValue ? this.props.buttonValue : '?'}
-        </Text>
+          <Image style={[styles.optionText]}
+         source={this.props.buttonValue ? this.props.buttonValue : ''}/>
       </TouchableOpacity>
      
         </View>
@@ -28,7 +27,7 @@ export default class Box extends Component {
     }
     }
     Box.propTypes = {
-        buttonValue: PropTypes.string,
+        
         gameOver: PropTypes.bool,
         rowNum: PropTypes.number,
         colNum: PropTypes.number,
@@ -42,12 +41,12 @@ export default class Box extends Component {
           justifyContent: 'center',
           alignItems: 'center',
           borderWidth: 1,
-          borderColor: 'black',
+          borderColor: '#fedc63',
           width: 100
         },
       
         optionText: {
-          fontSize: 52,
-          fontWeight: '900'
+          width:50,
+          height: 50
         }
       });

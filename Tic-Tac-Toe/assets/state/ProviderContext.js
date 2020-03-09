@@ -1,6 +1,8 @@
 import MyContext from './MyContext'
 import InitialState from './InitialState'
 import React, { useReducer } from "react";
+import swords from '../img/swords.png'
+import shield from '../img/shield.png'
 
 function reducer(state, action) {
     switch (action.type) {
@@ -35,8 +37,8 @@ function reducer(state, action) {
           ["X", "X", "X"], ["O", "O", "O"], de lo contrario,
           retorna 'false'.
           */
-          const xWins = combinationValues.filter((value)=>value === 'X').length ===3;
-          const oWins = combinationValues.filter((value)=>value === 'O').length ===3;
+          const xWins = combinationValues.filter((value)=>value === swords).length ===3;
+          const oWins = combinationValues.filter((value)=>value === shield).length ===3;
          
           return xWins || oWins ;
         };
@@ -81,7 +83,7 @@ function reducer(state, action) {
           return false;
         };
 
-        const player = state.nextPlayer === 'X' ? 'O' : 'X';
+        const player = state.nextPlayer === swords ? shield : swords;
         const board = updateBoard(state.board)
         const result = checkGameOver(board);
       let winner;
