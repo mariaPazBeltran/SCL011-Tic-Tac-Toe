@@ -25,10 +25,10 @@ Para construir el juego vamos a usar [React Native](https://facebook.github.io/r
    poco o nada de texto ...
 ## 3. Decisiones de Diseño:
 En este caso he decidido cambiar los token 'X' y 'O' por espadas y escudos. Con esto en consideración, los colores a usar se escogieron en base a los colores que utilizaba la realeza en la edad medieval
-![colores](https://ibb.co/mzDdQP1)
+![colores](https://i.ibb.co/b7XhXWd/colores.png)
 
 ####  Producto Final
-![Producto Final](https://ibb.co/x3XLkWB)
+![Producto Final](https://i.ibb.co/t3QKGgv/Screenshot-20200309-020322.jpg](https://i.ibb.co/t3QKGgv/Screenshot-20200309-020322.jpg))
 
 ## 4. Checklist
 
