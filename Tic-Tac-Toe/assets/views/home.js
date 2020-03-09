@@ -1,9 +1,10 @@
-import React, { Component, useContext } from 'react';
+import React, {  useContext } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import Board from '../components/board';
 import { LinearGradient } from 'expo-linear-gradient';
 import MyContext from '../state/MyContext';
 import NextPlayer from '../components/nextPlayer';
+import WinnerPlayer from '../components/Winner';
 
 const windowWidth = Dimensions.get('window').width;
  const Home =()=> {
@@ -19,6 +20,7 @@ const windowWidth = Dimensions.get('window').width;
             <Board/>
             {console.log(state)}
           </LinearGradient>
+          {state.gameOver && <WinnerPlayer/>}
       </View>
        
     );
