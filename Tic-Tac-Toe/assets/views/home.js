@@ -1,5 +1,5 @@
 import React, {  useContext } from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
 import Board from '../components/board';
 import { LinearGradient } from 'expo-linear-gradient';
 import MyContext from '../state/MyContext';
@@ -8,7 +8,11 @@ import WinnerPlayer from '../components/Winner';
 
 const windowWidth = Dimensions.get('window').width;
  const Home =()=> {
-    const { state } = useContext(MyContext);
+    const { state, dispatch } = useContext(MyContext);
+    const handleClick =()=> {
+      dispatch({
+          type:'reset' })
+    }
     return (
       <LinearGradient colors={['#fedc63','#672364', "#430064"]}
       style={styles.container_Home} >
@@ -20,6 +24,9 @@ const windowWidth = Dimensions.get('window').width;
             {console.log(state)}
           
           {state.gameOver && <WinnerPlayer/>}
+          <TouchableOpacity onPress={handleClick}>
+            <Text style={styles.newGame}>Reiniciar</Text>
+        </TouchableOpacity>
       </View>
        </LinearGradient>
     );
@@ -43,5 +50,16 @@ const windowWidth = Dimensions.get('window').width;
       alignItems: 'center',
       justifyContent: 'center',
     },
+    newGame:{
+      color: '#fedc63',
+      marginTop:10,
+      borderWidth: 1,
+      borderColor: '#fedc63',
+      borderRadius: 20,
+      width: 100,
+      textAlign: 'center',
+    marginBottom: 2      
+  }
   });
+  
   export default Home
