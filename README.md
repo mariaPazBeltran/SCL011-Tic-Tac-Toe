@@ -28,7 +28,7 @@ En este caso he decidido cambiar los token 'X' y 'O' por espadas y escudos. Con 
 ![colores](https://i.ibb.co/b7XhXWd/colores.png)
 
 ####  Producto Final
-![Producto Final](https://i.ibb.co/t3QKGgv/Screenshot-20200309-020322.jpg](https://i.ibb.co/t3QKGgv/Screenshot-20200309-020322.jpg))
+![Producto Final](https://i.ibb.co/t3QKGgv/Screenshot-20200309-020322.jpg))
 
 ## 4. Checklist
 
