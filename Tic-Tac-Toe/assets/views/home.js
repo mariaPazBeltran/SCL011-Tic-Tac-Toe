@@ -61,4 +61,5 @@ const windowWidth = Dimensions.get('window').width;
     marginBottom: 2      
   }
   });
+  
   export default Home
